@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Reset e Variáveis */
 * {
     margin: 0;
@@ -9,10 +11,8 @@
     --primary-color: #1a1a1a;
     --secondary-color: #ff6b6b;
     --accent-color: #ffd700;
-    --light-color: #f4f4f4;
     --text-color: #333;
     --light-bg: #f8f9fa;
-    --dark-bg: #1a1a1a;
     --border-color: #ddd;
 }
 
@@ -24,7 +24,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
     line-height: 1.6;
-    background-color: var(--light-bg);
+    background-color: #fff;
 }
 
 .container {
@@ -153,7 +153,7 @@ body {
 }
 
 .establishment-card {
-    background: var(--light-bg);
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -177,11 +177,15 @@ body {
 }
 
 .garrison-bg {
-    background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+    background: linear-gradient(135deg, #d4511e 0%, black 50%);
 }
 
 .burger-bg {
     background: linear-gradient(135deg, #d4511e 0%, #ff6b35 100%);
+}
+
+.store-bg {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
 }
 
 .cafe-bg {
@@ -228,21 +232,25 @@ body {
 }
 
 .detail-header {
+    text-align: center;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .detail-header h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(white);
     margin-bottom: 0.5rem;
 }
 
 .detail-header .category {
-    color: var(--light-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
+    color: white;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .detail-content {
@@ -394,63 +402,4 @@ body {
     .detail-header h1 {
         font-size: 1.5rem;
     }
-}
-
-.itens-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.itens-blackstore{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    max-width: 800px;
-    min-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    border-radius: 15px;
-    padding: 2rem;
-    cursor: pointer;
-}
-
-.itens-blackstore h1{
-    color: white;
-}
-
-.itens-blackstore .category{
-    color: var(--secondary-color);
-}
-
-.itens-blackstore:hover{
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-    box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.header-blackstore{
-    background-image: url('../img/black-srteet-slogan-\ 2.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    height: 200px;
-    border-radius: 15px;
-    padding: 2rem;
 }
